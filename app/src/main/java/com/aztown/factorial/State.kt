@@ -4,5 +4,5 @@ sealed class State
 
 object Progress : State()
 object Error : State()
-class Result(val factorial: String) : State()
+class Factorial(val factorial: String) : State()
 

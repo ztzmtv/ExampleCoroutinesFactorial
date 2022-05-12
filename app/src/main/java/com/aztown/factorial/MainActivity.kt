@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
                         this, "You didn't enter the value", Toast.LENGTH_SHORT
                     ).show()
                 }
-                is Result -> {
+                is Factorial -> {
                     binding.textViewFactorial.text = it.factorial
                 }
             }
