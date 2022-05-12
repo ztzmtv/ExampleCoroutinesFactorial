@@ -1,7 +1,8 @@
 package com.aztown.factorial
 
-class State(
-    val isError: Boolean = false,
-    val isProgress: Boolean = false,
-    var factorial: String = ""
-)
+sealed class State
+
+object Progress : State()
+object Error : State()
+class Result(val factorial: String) : State()
+
